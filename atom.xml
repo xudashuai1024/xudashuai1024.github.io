@@ -6,7 +6,7 @@
   <link href="https://xudashuai1024.github.io/atom.xml" rel="self"/>
   
   <link href="https://xudashuai1024.github.io/"/>
-  <updated>2022-01-27T16:26:26.088Z</updated>
+  <updated>2022-01-27T16:34:08.100Z</updated>
   <id>https://xudashuai1024.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>下步计划集成网页背景音乐</title>
+    <link href="https://xudashuai1024.github.io/2022/01/28/xia-bu-ji-hua-ji-cheng-wang-ye-bei-jing-yin-le/"/>
+    <id>https://xudashuai1024.github.io/2022/01/28/xia-bu-ji-hua-ji-cheng-wang-ye-bei-jing-yin-le/</id>
+    <published>2022-01-27T16:32:17.000Z</published>
+    <updated>2022-01-27T16:34:08.100Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;计划&quot;&gt;&lt;a href=&quot;#计划&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="plan" scheme="https://xudashuai1024.github.io/tags/plan/"/>
+    
+  </entry>
   
   <entry>
     <title>使用hexo插件换主题以及装饰</title>
@@ -42,10 +65,10 @@
   
   <entry>
     <title>第一篇记录</title>
-    <link href="https://xudashuai1024.github.io/2022/01/24/di-er-pian-ji-lu/"/>
-    <id>https://xudashuai1024.github.io/2022/01/24/di-er-pian-ji-lu/</id>
+    <link href="https://xudashuai1024.github.io/2022/01/24/di-yi-pian-ji-lu/"/>
+    <id>https://xudashuai1024.github.io/2022/01/24/di-yi-pian-ji-lu/</id>
     <published>2022-01-24T13:26:06.000Z</published>
-    <updated>2022-01-27T16:15:19.778Z</updated>
+    <updated>2022-01-27T16:31:08.011Z</updated>
     
     
       
@@ -58,6 +81,8 @@
     
     
     
+    
+    <category term="time" scheme="https://xudashuai1024.github.io/tags/time/"/>
     
   </entry>
   

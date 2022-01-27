@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>下步计划集成网页背景音乐</title>
+      <link href="/2022/01/28/xia-bu-ji-hua-ji-cheng-wang-ye-bei-jing-yin-le/"/>
+      <url>/2022/01/28/xia-bu-ji-hua-ji-cheng-wang-ye-bei-jing-yin-le/</url>
+      
+        <content type="html"><![CDATA[<h2 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h2><hr><p>内容：给博客背景添加音乐</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> plan </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用hexo插件换主题以及装饰</title>
       <link href="/2022/01/28/shi-yong-hexo-cha-jian-huan-zhu-ti-yi-ji-zhuang-shi/"/>
       <url>/2022/01/28/shi-yong-hexo-cha-jian-huan-zhu-ti-yi-ji-zhuang-shi/</url>
@@ -24,12 +43,18 @@
     
     <entry>
       <title>第一篇记录</title>
-      <link href="/2022/01/24/di-er-pian-ji-lu/"/>
-      <url>/2022/01/24/di-er-pian-ji-lu/</url>
+      <link href="/2022/01/24/di-yi-pian-ji-lu/"/>
+      <url>/2022/01/24/di-yi-pian-ji-lu/</url>
       
         <content type="html"><![CDATA[<h3 id="记录日志第一篇"><a href="#记录日志第一篇" class="headerlink" title="记录日志第一篇"></a>记录日志第一篇</h3><p>内容：距离过年还有六天~</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> time </tag>
+            
+        </tags>
       
     </entry>
     
