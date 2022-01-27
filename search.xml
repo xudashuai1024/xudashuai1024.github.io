@@ -4,11 +4,30 @@
   
     
     <entry>
-      <title>第二篇记录</title>
+      <title>使用hexo插件换主题以及装饰</title>
+      <link href="/2022/01/28/shi-yong-hexo-cha-jian-huan-zhu-ti-yi-ji-zhuang-shi/"/>
+      <url>/2022/01/28/shi-yong-hexo-cha-jian-huan-zhu-ti-yi-ji-zhuang-shi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="页面添加2D人物"><a href="#页面添加2D人物" class="headerlink" title="页面添加2D人物"></a>页面添加2D人物</h2><hr><p>npm install –save hexo-helper-live2d</p><hr><h3 id="config-yml添加配置"><a href="#config-yml添加配置" class="headerlink" title="_config.yml添加配置"></a>_config.yml添加配置</h3><p>#Live2D<br>##<a href="https://github.com/xiazeyu/live2d-widget.js">https://github.com/xiazeyu/live2d-widget.js</a><br>##<a href="https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init">https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init</a><br>live2d:<br>  model:<br>    scale: 1<br>    hHeadPos: 0.5<br>    vHeadPos: 0.618<br>  display:<br>    superSample: 2<br>    width: 150<br>    height: 300<br>    position: right<br>    hOffset: 0<br>    vOffset: -20<br>  mobile:<br>    show: true<br>    scale: 0.5<br>  react:<br>    opacityDefault: 0.7<br>    opacityOnHover: 0.2</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一篇记录</title>
       <link href="/2022/01/24/di-er-pian-ji-lu/"/>
       <url>/2022/01/24/di-er-pian-ji-lu/</url>
       
-        <content type="html"><![CDATA[<h3 id="记录日志第二篇"><a href="#记录日志第二篇" class="headerlink" title="记录日志第二篇"></a>记录日志第二篇</h3><p>内容：距离过年还有六天~</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="记录日志第一篇"><a href="#记录日志第一篇" class="headerlink" title="记录日志第一篇"></a>记录日志第一篇</h3><p>内容：距离过年还有六天~</p>]]></content>
       
       
       
