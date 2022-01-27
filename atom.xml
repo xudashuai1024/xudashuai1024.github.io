@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Xiao xu</title>
+  
+  
+  <link href="https://xudashuai1024.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://xudashuai1024.github.io/"/>
+  <updated>2022-01-24T13:27:39.788Z</updated>
+  <id>https://xudashuai1024.github.io/</id>
+  
+  <author>
+    <name>Xu haha</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第二篇记录</title>
+    <link href="https://xudashuai1024.github.io/2022/01/24/di-er-pian-ji-lu/"/>
+    <id>https://xudashuai1024.github.io/2022/01/24/di-er-pian-ji-lu/</id>
+    <published>2022-01-24T13:26:06.000Z</published>
+    <updated>2022-01-24T13:27:39.788Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;记录日志第二篇&quot;&gt;&lt;a href=&quot;#记录日志第二篇&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
