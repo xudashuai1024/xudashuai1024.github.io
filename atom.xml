@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Xiao xu</title>
+  <title>徐哈哈</title>
   
-  
+  <subtitle>黎明将至</subtitle>
   <link href="https://xudashuai1024.github.io/atom.xml" rel="self"/>
   
   <link href="https://xudashuai1024.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://xudashuai1024.github.io/</id>
   
   <author>
-    <name>Xu haha</name>
+    <name>徐哈哈</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>下步计划集成网页背景音乐</title>
-    <link href="https://xudashuai1024.github.io/2022/01/28/xia-bu-ji-hua-ji-cheng-wang-ye-bei-jing-yin-le/"/>
-    <id>https://xudashuai1024.github.io/2022/01/28/xia-bu-ji-hua-ji-cheng-wang-ye-bei-jing-yin-le/</id>
+    <link href="https://xudashuai1024.github.io/2022/01/28/hou-xu-ji-cheng-geng-duo-gong-neng/"/>
+    <id>https://xudashuai1024.github.io/2022/01/28/hou-xu-ji-cheng-geng-duo-gong-neng/</id>
     <published>2022-01-27T16:32:17.000Z</published>
     <updated>2022-01-27T16:34:08.100Z</updated>
     
@@ -41,8 +41,8 @@
   
   <entry>
     <title>使用hexo插件换主题以及装饰</title>
-    <link href="https://xudashuai1024.github.io/2022/01/28/shi-yong-hexo-cha-jian-huan-zhu-ti-yi-ji-zhuang-shi/"/>
-    <id>https://xudashuai1024.github.io/2022/01/28/shi-yong-hexo-cha-jian-huan-zhu-ti-yi-ji-zhuang-shi/</id>
+    <link href="https://xudashuai1024.github.io/2022/01/28/hexo-tian-jia-2d-ren-wu/"/>
+    <id>https://xudashuai1024.github.io/2022/01/28/hexo-tian-jia-2d-ren-wu/</id>
     <published>2022-01-27T16:14:27.000Z</published>
     <updated>2022-01-27T16:26:26.088Z</updated>
     
