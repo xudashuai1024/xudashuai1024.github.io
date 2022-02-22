@@ -27,7 +27,10 @@
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
-
+	<link rel="stylesheet" href="/css/snow.css">
+	<div id="snowzone">
+	</div> 
+	<script src="/js/snow.js"></script>
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 6.0.0">
@@ -315,6 +318,11 @@
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">3</a></span>
+    <span class="name">分类</span>
+</div>
+
 
 
 <div class="statis">
@@ -339,6 +347,11 @@
 </div>
 
 
+
+<div class="statis">
+    <span class="count"><a href="/categories">3</a></span>
+    <span class="name">分类</span>
+</div>
 
 
 
@@ -487,7 +500,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,3,0],
+                data: [0,0,0,0,0,0,0,0,0,0,0,1,2],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -529,7 +542,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [],
+                data: [{"name":"Java","value":1},{"name":"设计模式","value":1},{"name":"博客","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -553,7 +566,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["hexo","time","plan"]
+                data: ["hexo","Mybatis","Java"]
             }
         ],
         yAxis: [
@@ -690,15 +703,11 @@
             
             
             
-            <a href="/tags/time/">
-                <span class="chip center-align waves-effect waves-light chip-default">time</span>
+            <a href="/tags/Mybatis/">
+                <span class="chip center-align waves-effect waves-light chip-default">Mybatis</span>
             </a>
             
             
-            
-            <a href="/tags/plan/">
-                <span class="chip center-align waves-effect waves-light chip-default">plan</span>
-            </a>
             
             
         </div>
@@ -767,16 +776,12 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -799,15 +804,15 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="563114426"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
                    preload='auto'
                    volume='0.7'
-                   list-folded='true'
+                   list-folded='false'
         >
         </meting-js>
     </div>
@@ -831,7 +836,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">106</span>
+                        class="white-color">6.4k</span>
             
             
             

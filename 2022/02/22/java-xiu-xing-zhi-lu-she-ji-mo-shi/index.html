@@ -4,10 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="下步计划集成网页背景音乐, HTML,JavaScript,JQuery,Java,linux等">
-    <meta name="description" content="计划
-内容：给博客背景添加音乐
-">
+    <meta name="keywords" content="Java修行之路_设计模式, HTML,JavaScript,JQuery,Java,linux等">
+    <meta name="description" content="Java修行之路_设计模式六大原则修行需知~多态的表象:
+
+（1）类类之间要有继承关系（2）子类要重写父类方法（3）父类引用指向子类对象
+
+
+
+父类引用调用成员变量，内存地址指向父类内部成员变量。父类引用调用成员方法（不含有static），">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +23,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>下步计划集成网页背景音乐 | 徐哈哈</title>
+    <title>Java修行之路_设计模式 | 徐哈哈</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -29,7 +33,10 @@
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
     <link rel="stylesheet" type="text/css" href="/css/my.css">
-
+	<link rel="stylesheet" href="/css/snow.css">
+	<div id="snowzone">
+	</div> 
+	<script src="/js/snow.js"></script>
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 6.0.0">
@@ -251,12 +258,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">下步计划集成网页背景音乐</h1>
+                    <h1 class="description center-align post-title">Java修行之路_设计模式</h1>
                 </div>
             </div>
         </div>
@@ -372,14 +379,23 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/plan/">
-                                <span class="chip bg-color">plan</span>
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-category">
+                                设计模式
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -388,21 +404,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-28
+                    2022-02-22
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-28
+                    2022-02-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    13
+                    553
                 </div>
                 
 
@@ -419,13 +435,63 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h2><hr>
-<p>内容：给博客背景添加音乐</p>
+                <h1 id="Java修行之路-设计模式六大原则"><a href="#Java修行之路-设计模式六大原则" class="headerlink" title="Java修行之路_设计模式六大原则"></a>Java修行之路_设计模式六大原则</h1><h4 id="修行需知"><a href="#修行需知" class="headerlink" title="修行需知~"></a>修行需知~</h4><p><strong>多态的表象:</strong></p>
+<blockquote>
+<p>（1）类类之间要有继承关系<br>（2）子类要重写父类方法<br>（3）父类引用指向子类对象</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>父类引用调用成员变量，内存地址指向父类内部成员变量。<br>父类引用调用成员方法（不含有static），实际使用子类方法<br>父类引用调用静态方法，实际使用父类内部静态方法<br>【相同】类域的【不同】对象执行【同一】方法的时候会有【不同】的表现<br>父类与子类的相互转换</p>
+</blockquote>
+<hr>
+<h2 id="设计模式六大原则"><a href="#设计模式六大原则" class="headerlink" title="设计模式六大原则"></a>设计模式六大原则</h2><h3 id="单一职责："><a href="#单一职责：" class="headerlink" title="单一职责："></a>单一职责：</h3><blockquote>
+<p>理解：类或方法单一分类，降低耦合性</p>
+</blockquote>
+<ul>
+<li>例子：对于网络请求框架有：请求类，缓存类，配置类等，相互独立处理各自业务，则符合单一职责</li>
+</ul>
+<h3 id="开闭原则："><a href="#开闭原则：" class="headerlink" title="开闭原则："></a>开闭原则：</h3><blockquote>
+<p>理解：代码中的类，模块，函数等其他，开放扩展，闭合修改，为了程序的扩展性更好，维护和升级更简单</p>
+</blockquote>
+<ul>
+<li>例子：~</li>
+</ul>
+<h3 id="里氏替换："><a href="#里氏替换：" class="headerlink" title="里氏替换："></a>里氏替换：</h3><blockquote>
+<p>理解：类继承其他类的时候，通过新扩展的功能来替换需要修改的父类方法引用</p>
+</blockquote>
+<ul>
+<li>例子：~</li>
+</ul>
+<h3 id="依赖倒置："><a href="#依赖倒置：" class="headerlink" title="依赖倒置："></a>依赖倒置：</h3><blockquote>
+<p>理解：高层模块不依赖底层模块，不依赖具体实现类，而依赖抽象接口，便于扩展细节业务</p>
+</blockquote>
+<ul>
+<li>例子：场景体育比赛，同一个运动员，可参加各种运动项目，如果明确运动员参加某项运动，就会被局限住，如果是抽象为参加运动就可以无限扩展</li>
+</ul>
+<h3 id="迪米特法则："><a href="#迪米特法则：" class="headerlink" title="迪米特法则："></a>迪米特法则：</h3><blockquote>
+<p>理解：调用一个类完成业务过程，不必让其了解到内部实现细节</p>
+</blockquote>
+<ul>
+<li>例子：一个系统调用领一个接口系统的时候，可以只提供一个中间介给间接调用接口服务，并不会暴露接口</li>
+</ul>
+<h3 id="接口隔离："><a href="#接口隔离：" class="headerlink" title="接口隔离："></a>接口隔离：</h3><blockquote>
+<p>理解：将接口职责最小化</p>
+</blockquote>
+<ul>
+<li>例子：~</li>
+</ul>
+<p>》 设计模式的好处：合理运用设计模式，可以提高代码可读性，可扩展性，便于阅读维护扩展</p>
+<blockquote>
+<p>后续结合代码例子记录部分常用设计模式使用</p>
+</blockquote>
 
                 
             </div>
@@ -452,7 +518,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xudashuai1024.github.io/2022/01/28/hou-xu-ji-cheng-geng-duo-gong-neng/">https://xudashuai1024.github.io/2022/01/28/hou-xu-ji-cheng-geng-duo-gong-neng/</a>
+                    <a href="https://xudashuai1024.github.io/2022/02/22/java-xiu-xing-zhi-lu-she-ji-mo-shi/">https://xudashuai1024.github.io/2022/02/22/java-xiu-xing-zhi-lu-she-ji-mo-shi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -490,8 +556,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/plan/">
-                                    <span class="chip bg-color">plan</span>
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
                                 </a>
                             
                         </div>
@@ -643,278 +709,39 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
 
-    
-
-    
-
-    
-
-    
-        <style>
-    .valine-card {
-        margin: 1.5rem auto;
-    }
-
-    .valine-card .card-content {
-        padding: 20px 20px 5px 20px;
-    }
-
-    #vcomments textarea {
-        box-sizing: border-box;
-        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
-    }
-
-    #vcomments p {
-        margin: 2px 2px 10px;
-        font-size: 1.05rem;
-        line-height: 1.78rem;
-    }
-
-    #vcomments blockquote p {
-        text-indent: 0.2rem;
-    }
-
-    #vcomments a {
-        padding: 0 2px;
-        color: #4cbf30;
-        font-weight: 500;
-        text-decoration: none;
-    }
-
-    #vcomments img {
-        max-width: 100%;
-        height: auto;
-        cursor: pointer;
-    }
-
-    #vcomments ol li {
-        list-style-type: decimal;
-    }
-
-    #vcomments ol,
-    ul {
-        display: block;
-        padding-left: 2em;
-        word-spacing: 0.05rem;
-    }
-
-    #vcomments ul li,
-    ol li {
-        display: list-item;
-        line-height: 1.8rem;
-        font-size: 1rem;
-    }
-
-    #vcomments ul li {
-        list-style-type: disc;
-    }
-
-    #vcomments ul ul li {
-        list-style-type: circle;
-    }
-
-    #vcomments table, th, td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    #vcomments table, th, td {
-        border: 0;
-    }
-
-    table tr:nth-child(2n), thead {
-        background-color: #fafafa;
-    }
-
-    #vcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #vcomments table td {
-        min-width: 80px;
-    }
-
-    #vcomments h1 {
-        font-size: 1.85rem;
-        font-weight: bold;
-        line-height: 2.2rem;
-    }
-
-    #vcomments h2 {
-        font-size: 1.65rem;
-        font-weight: bold;
-        line-height: 1.9rem;
-    }
-
-    #vcomments h3 {
-        font-size: 1.45rem;
-        font-weight: bold;
-        line-height: 1.7rem;
-    }
-
-    #vcomments h4 {
-        font-size: 1.25rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    #vcomments h5 {
-        font-size: 1.1rem;
-        font-weight: bold;
-        line-height: 1.4rem;
-    }
-
-    #vcomments h6 {
-        font-size: 1rem;
-        line-height: 1.3rem;
-    }
-
-    #vcomments p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    #vcomments hr {
-        margin: 12px 0;
-        border: 0;
-        border-top: 1px solid #ccc;
-    }
-
-    #vcomments blockquote {
-        margin: 15px 0;
-        border-left: 5px solid #42b983;
-        padding: 1rem 0.8rem 0.3rem 0.8rem;
-        color: #666;
-        background-color: rgba(66, 185, 131, .1);
-    }
-
-    #vcomments pre {
-        font-family: monospace, monospace;
-        padding: 1.2em;
-        margin: .5em 0;
-        background: #272822;
-        overflow: auto;
-        border-radius: 0.3em;
-        tab-size: 4;
-    }
-
-    #vcomments code {
-        font-family: monospace, monospace;
-        padding: 1px 3px;
-        font-size: 0.92rem;
-        color: #e96900;
-        background-color: #f8f8f8;
-        border-radius: 2px;
-    }
-
-    #vcomments pre code {
-        font-family: monospace, monospace;
-        padding: 0;
-        color: #e8eaf6;
-        background-color: #272822;
-    }
-
-    #vcomments pre[class*="language-"] {
-        padding: 1.2em;
-        margin: .5em 0;
-    }
-
-    #vcomments code[class*="language-"],
-    pre[class*="language-"] {
-        color: #e8eaf6;
-    }
-
-    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
-    }
-
-    #vcomments b,
-    strong {
-        font-weight: bold;
-    }
-
-    #vcomments dfn {
-        font-style: italic;
-    }
-
-    #vcomments small {
-        font-size: 85%;
-    }
-
-    #vcomments cite {
-        font-style: normal;
-    }
-
-    #vcomments mark {
-        background-color: #fcf8e3;
-        padding: .2em;
-    }
-
-    #vcomments table, th, td {
-        padding: 12px 13px;
-        border: 1px solid #dfe2e5;
-    }
-
-    table tr:nth-child(2n), thead {
-        background-color: #fafafa;
-    }
-
-    #vcomments table th {
-        background-color: #f2f2f2;
-        min-width: 80px;
-    }
-
-    #vcomments table td {
-        min-width: 80px;
-    }
-
-    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
-        position: inherit;
-        margin-left: -1.3rem;
-        margin-right: 0.4rem;
-        margin-top: -1px;
-        vertical-align: middle;
-        left: unset;
-        visibility: visible;
-    }
-</style>
-
-<div class="card valine-card" data-aos="fade-up">
+<div class="card gitalk-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div id="vcomments" class="card-content" style="display: grid">
-    </div>
+    <div id="gitalk-container" class="card-content"></div>
 </div>
 
-<script src="/libs/valine/av-min.js"></script>
-<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script src="/libs/gitalk/gitalk.min.js"></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        appId: '87CJ0pHEaOKYTpPYcdwmGDps-gzGzoHsz',
-        appKey: '1BJYBucMk2fWDbtx3VL5lwHa',
-        notify: 'false' === 'true',
-        verify: 'false' === 'true',
-        visitor: 'true' === 'true',
-        avatar: 'mm',
-        pageSize: '10',
-        lang: 'zh-cn',
-        placeholder: 'just go go'
+    let gitalk = new Gitalk({
+        clientID: '8017fb3e73fcc01b3b89',
+        clientSecret: '9b3bac85bf24ea0345ac23d7daf951c72946b649',
+        repo: 'xudashuai1024.github.io',
+        owner: 'xudashuai1024',
+        admin: ["xudashuai1024"],
+        id: '2022-02-22T17-04-00',
+        distractionFreeMode: false  // Facebook-like distraction free mode
     });
+
+    gitalk.render('gitalk-container');
 </script>
 
-<!--酷Q推送-->
+    
 
+    
+
+    
+
+    
 
     
 
@@ -936,13 +763,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2022/01/28/hou-xu-ji-cheng-geng-duo-gong-neng/">
+                <a href="/2022/02/22/java-xiu-xing-zhi-lu-she-ji-mo-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="下步计划集成网页背景音乐">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Java修行之路_设计模式">
                         
-                        <span class="card-title">下步计划集成网页背景音乐</span>
+                        <span class="card-title">Java修行之路_设计模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -953,12 +780,16 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-22
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            徐哈哈
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="post-category">
+                                    设计模式
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -967,8 +798,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/plan/">
-                        <span class="chip bg-color">plan</span>
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
                     </a>
                     
                 </div>
@@ -982,13 +813,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/28/hexo-tian-jia-2d-ren-wu/">
+                <a href="/2022/02/22/mybatis-yuan-ma-ye-wu-jie-du/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="使用hexo插件换主题以及装饰">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Mybatis源码业务解读">
                         
-                        <span class="card-title">使用hexo插件换主题以及装饰</span>
+                        <span class="card-title">Mybatis源码业务解读</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -999,12 +830,16 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-22
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            徐哈哈
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1012,8 +847,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/Mybatis/">
+                        <span class="chip bg-color">Mybatis</span>
                     </a>
                     
                 </div>
@@ -1153,16 +988,12 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -1185,15 +1016,15 @@
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="563114426"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
                    preload='auto'
                    volume='0.7'
-                   list-folded='true'
+                   list-folded='false'
         >
         </meting-js>
     </div>
@@ -1217,7 +1048,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">106</span>
+                        class="white-color">6.4k</span>
             
             
             
