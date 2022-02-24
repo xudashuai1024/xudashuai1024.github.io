@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="使用hexo插件换主题以及装饰, HTML,JavaScript,JQuery,Java,linux等">
-    <meta name="description" content="页面添加2D人物
-下载插件npm install –save hexo-helper-live2d
+    <meta name="keywords" content="Java修行之路_算法, HTML,JavaScript,JQuery,Java,linux等">
+    <meta name="description" content="算法_二叉树二叉树关于二叉树遍历，添加，删除情况套路通用处理
+二叉树算法的设计的总路线：明确一个节点要做的事情，然后剩下的事抛给框架
 
-_config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
+void traverse(TreeNode root) {
+    // root 需要做什么？在这做">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +21,7 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>使用hexo插件换主题以及装饰 | 徐哈哈</title>
+    <title>Java修行之路_算法 | 徐哈哈</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -255,12 +256,12 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用hexo插件换主题以及装饰</h1>
+                    <h1 class="description center-align post-title">Java修行之路_算法</h1>
                 </div>
             </div>
         </div>
@@ -376,8 +377,8 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">算法</span>
                             </a>
                         
                     </div>
@@ -388,8 +389,8 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                博客
+                            <a href="/categories/Java/" class="post-category">
+                                Java
                             </a>
                         
                     </div>
@@ -401,28 +402,28 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-28
+                    2022-02-24
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-22
+                    2022-02-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    92
+                    708
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -440,12 +441,154 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="页面添加2D人物"><a href="#页面添加2D人物" class="headerlink" title="页面添加2D人物"></a>页面添加2D人物</h1><hr>
-<h2 id="下载插件"><a href="#下载插件" class="headerlink" title="下载插件"></a>下载插件</h2><p>npm install –save hexo-helper-live2d</p>
-<hr>
-<h3 id="config-yml添加配置"><a href="#config-yml添加配置" class="headerlink" title="_config.yml添加配置"></a>_config.yml添加配置</h3><p>#Live2D<br>##<a target="_blank" rel="noopener" href="https://github.com/xiazeyu/live2d-widget.js">https://github.com/xiazeyu/live2d-widget.js</a><br>##<a target="_blank" rel="noopener" href="https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init">https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init</a><br>live2d:<br>  model:<br>    scale: 1<br>    hHeadPos: 0.5<br>    vHeadPos: 0.618<br>  display:<br>    superSample: 2<br>    width: 150<br>    height: 300<br>    position: right<br>    hOffset: 0<br>    vOffset: -20<br>  mobile:<br>    show: true<br>    scale: 0.5<br>  react:<br>    opacityDefault: 0.7<br>    opacityOnHover: 0.2</p>
-<hr>
-<h3 id="hexo重新编译启动"><a href="#hexo重新编译启动" class="headerlink" title="hexo重新编译启动"></a>hexo重新编译启动</h3><p>hexo clear,hexo g , hexo s</p>
+                <h1 id="算法-二叉树"><a href="#算法-二叉树" class="headerlink" title="算法_二叉树"></a>算法_二叉树</h1><h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2><h4 id="关于二叉树遍历，添加，删除情况套路通用处理"><a href="#关于二叉树遍历，添加，删除情况套路通用处理" class="headerlink" title="关于二叉树遍历，添加，删除情况套路通用处理"></a>关于二叉树遍历，添加，删除情况套路通用处理</h4><blockquote>
+<p>二叉树算法的设计的总路线：明确一个节点要做的事情，然后剩下的事抛给框架</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">traverse</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// root 需要做什么？在这做。</span>
+    <span class="token comment">// 其他的不用 root 操心，抛给框架</span>
+    <span class="token function">traverse</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">traverse</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="热身：1-如何把二叉树所有的节点中的值加一？"><a href="#热身：1-如何把二叉树所有的节点中的值加一？" class="headerlink" title="热身：1. 如何把二叉树所有的节点中的值加一？"></a><strong>热身：1. 如何把二叉树所有的节点中的值加一？</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">plusOne</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+    root<span class="token punctuation">.</span>val <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+    <span class="token function">plusOne</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">plusOne</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="2-如何判断两棵二叉树是否完全相同？"><a href="#2-如何判断两棵二叉树是否完全相同？" class="headerlink" title="2. 如何判断两棵二叉树是否完全相同？"></a><strong>2. 如何判断两棵二叉树是否完全相同？</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">boolean</span> <span class="token function">isSameTree</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root1<span class="token punctuation">,</span> <span class="token class-name">TreeNode</span> root2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 都为空的话，显然相同</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root1 <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> root2 <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token comment">// 一个为空，一个非空，显然不同</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root1 <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> root2 <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token comment">// 两个都非空，但 val 不一样也不行</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root1<span class="token punctuation">.</span>val <span class="token operator">!=</span> root2<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// root1 和 root2 该比的都比完了</span>
+    <span class="token keyword">return</span> <span class="token function">isSameTree</span><span class="token punctuation">(</span>root1<span class="token punctuation">.</span>left<span class="token punctuation">,</span> root2<span class="token punctuation">.</span>left<span class="token punctuation">)</span>
+        <span class="token operator">&amp;&amp;</span> <span class="token function">isSameTree</span><span class="token punctuation">(</span>root1<span class="token punctuation">.</span>right<span class="token punctuation">,</span> root2<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="判断-BST-的合法性"><a href="#判断-BST-的合法性" class="headerlink" title="判断 BST 的合法性"></a><strong>判断 BST 的合法性</strong></h4><blockquote>
+<p>二叉搜索树（Binary Search Tree，简称 BST）是一种很常用的的二叉树。它的定义是：一个二叉树中，任意节点的值要大于等于左子树所有节点的值，且要小于等于右边子树的所有节点的值。这种情况，我们可以使用辅助函数，增加函数参数列表，在参数中携带额外信息</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">boolean</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">boolean</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">,</span> <span class="token class-name">TreeNode</span> min<span class="token punctuation">,</span> <span class="token class-name">TreeNode</span> max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>min <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> root<span class="token punctuation">.</span>val <span class="token operator">&lt;=</span> min<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>max <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> root<span class="token punctuation">.</span>val <span class="token operator">&gt;=</span> max<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span> min<span class="token punctuation">,</span> root<span class="token punctuation">)</span> 
+        <span class="token operator">&amp;&amp;</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">,</span> root<span class="token punctuation">,</span> max<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="在-BST-中查找一个数是否存在"><a href="#在-BST-中查找一个数是否存在" class="headerlink" title="在 BST 中查找一个数是否存在"></a><strong>在 BST 中查找一个数是否存在</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token function">isInBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> target<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">==</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>leftNode<span class="token punctuation">,</span>target<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>rightNode<span class="token punctuation">,</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="使用二分查找法"><a href="#使用二分查找法" class="headerlink" title="使用二分查找法"></a>使用二分查找法</h5><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token function">isInBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> target<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">==</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&lt;</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&gt;</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="以上算法中可抽象出方法架子（针对遍历的架子）"><a href="#以上算法中可抽象出方法架子（针对遍历的架子）" class="headerlink" title="以上算法中可抽象出方法架子（针对遍历的架子）"></a><strong>以上算法中可抽象出方法架子（针对遍历的架子）</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">BST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> value<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">==</span> value<span class="token punctuation">)</span> <span class="token comment">//找到目标，进行操作</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>val <span class="token operator">&lt;</span> value<span class="token punctuation">)</span>  <span class="token function">BST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>val <span class="token operator">&gt;</span> value<span class="token punctuation">)</span>  <span class="token function">BST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="在-BST-中插入一个数"><a href="#在-BST-中插入一个数" class="headerlink" title="在 BST 中插入一个数"></a><strong>在 BST 中插入一个数</strong></h4><blockquote>
+<p>对数据结构的操作无非遍历 + 访问，遍历就是“找”，访问就是“改”。具体到这个问题，插入一个数，就是先找到插入位置，然后进行插入操作。涉及“改”，函数就要返回 TreeNode 类型，并且对递归调用的返回值进行接收</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">TreeNode</span> <span class="token function">insertValue</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> val<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">TreeNode</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&lt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token function">insertValue</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&gt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token function">insertValue</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> node<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="在-BST-中删除一个数"><a href="#在-BST-中删除一个数" class="headerlink" title="在 BST 中删除一个数"></a><strong>在 BST 中删除一个数</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">TreeNode</span> <span class="token function">deleteNode</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> val<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> val<span class="token punctuation">)</span> <span class="token comment">//进行删除</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&lt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token function">deleteNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&gt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token function">deleteNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> node<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 
             </div>
@@ -472,7 +615,7 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xudashuai1024.github.io/2022/01/28/hexo-tian-jia-2d-ren-wu/">https://xudashuai1024.github.io/2022/01/28/hexo-tian-jia-2d-ren-wu/</a>
+                    <a href="https://xudashuai1024.github.io/2022/02/24/java-xiu-xing-zhi-lu-suan-fa/">https://xudashuai1024.github.io/2022/02/24/java-xiu-xing-zhi-lu-suan-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -510,8 +653,8 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/tags/%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">算法</span>
                                 </a>
                             
                         </div>
@@ -682,7 +825,7 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
         repo: 'xudashuai1024.github.io',
         owner: 'xudashuai1024',
         admin: ["xudashuai1024"],
-        id: '2022-01-28T00-14-27',
+        id: '2022-02-24T11-13-47',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -712,17 +855,18 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/02/22/mybatis-yuan-ma-ye-wu-jie-du/">
+                <a href="/2022/02/24/java-xiu-xing-zhi-lu-suan-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Mybatis源码业务解读">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Java修行之路_算法">
                         
-                        <span class="card-title">Mybatis源码业务解读</span>
+                        <span class="card-title">Java修行之路_算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -732,9 +876,59 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-22
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">算法</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/02/22/java-xiu-xing-zhi-lu-she-ji-mo-shi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Java修行之路_设计模式">
+                        
+                        <span class="card-title">Java修行之路_设计模式</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -750,58 +944,8 @@ _config.yml添加配置#Live2D##https://github.com/xiazeyu/live2d-widget.js##">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Mybatis/">
-                        <span class="chip bg-color">Mybatis</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/01/28/hexo-tian-jia-2d-ren-wu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="使用hexo插件换主题以及装饰">
-                        
-                        <span class="card-title">使用hexo插件换主题以及装饰</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-28
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
+                        <span class="chip bg-color">设计模式</span>
                     </a>
                     
                 </div>
