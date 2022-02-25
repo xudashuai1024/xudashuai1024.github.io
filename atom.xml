@@ -6,7 +6,7 @@
   <link href="https://xudashuai1024.github.io/atom.xml" rel="self"/>
   
   <link href="https://xudashuai1024.github.io/"/>
-  <updated>2022-02-24T16:23:53.232Z</updated>
+  <updated>2022-02-25T09:54:04.181Z</updated>
   <id>https://xudashuai1024.github.io/</id>
   
   <author>
@@ -17,18 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java修行之路_Redis</title>
-    <link href="https://xudashuai1024.github.io/2022/02/25/java-xiu-xing-zhi-lu-redis/"/>
-    <id>https://xudashuai1024.github.io/2022/02/25/java-xiu-xing-zhi-lu-redis/</id>
+    <title>Java修行之路-Redis缓存异常处理</title>
+    <link href="https://xudashuai1024.github.io/2022/02/25/java-xiu-xing-zhi-lu-redis-huan-cun-yi-chang-chu-li/"/>
+    <id>https://xudashuai1024.github.io/2022/02/25/java-xiu-xing-zhi-lu-redis-huan-cun-yi-chang-chu-li/</id>
+    <published>2022-02-25T07:05:15.000Z</published>
+    <updated>2022-02-25T09:54:04.181Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Redis缓存异常处理&quot;&gt;&lt;a href=&quot;#Redis缓存异常处理&quot; class=&quot;headerlink&quot; title=&quot;Redis缓存异常处理&quot;&gt;&lt;/a&gt;Redis缓存异常处理&lt;/h1&gt;&lt;h4 id=&quot;如何应对Redis缓存雪崩&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://xudashuai1024.github.io/categories/Java/"/>
+    
+    
+    <category term="Redis" scheme="https://xudashuai1024.github.io/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java修行之路_Redis高可用性</title>
+    <link href="https://xudashuai1024.github.io/2022/02/25/java-xiu-xing-zhi-lu-redis-gao-ke-yong-te-xing/"/>
+    <id>https://xudashuai1024.github.io/2022/02/25/java-xiu-xing-zhi-lu-redis-gao-ke-yong-te-xing/</id>
     <published>2022-02-24T16:21:33.000Z</published>
-    <updated>2022-02-24T16:23:53.232Z</updated>
+    <updated>2022-02-25T07:02:54.462Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Redis专题&quot;&gt;&lt;a href=&quot;#Redis专题&quot; class=&quot;headerlink&quot; title=&quot;Redis专题&quot;&gt;&lt;/a&gt;Redis专题&lt;/h1&gt;&lt;h4 id=&quot;Redis有哪些数据类型？分别在什么场景下使用比较合适？&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h1 id=&quot;Redis高可用性&quot;&gt;&lt;a href=&quot;#Redis高可用性&quot; class=&quot;headerlink&quot; title=&quot;Redis高可用性&quot;&gt;&lt;/a&gt;Redis高可用性&lt;/h1&gt;&lt;h4 id=&quot;Redis有哪些数据类型？分别在什么场景下使用比较合适？&quot;&gt;&lt;a</summary>
         
       
     
@@ -93,8 +118,8 @@
   
   <entry>
     <title>Mybatis源码业务解读</title>
-    <link href="https://xudashuai1024.github.io/2022/02/22/mybatis-yuan-ma-ye-wu-jie-du/"/>
-    <id>https://xudashuai1024.github.io/2022/02/22/mybatis-yuan-ma-ye-wu-jie-du/</id>
+    <link href="https://xudashuai1024.github.io/2022/02/22/java-xiu-xing-zhi-lu-mybatis-ye-wu-liu-cheng-yuan-ma-jie-du/"/>
+    <id>https://xudashuai1024.github.io/2022/02/22/java-xiu-xing-zhi-lu-mybatis-ye-wu-liu-cheng-yuan-ma-jie-du/</id>
     <published>2022-02-22T01:11:08.000Z</published>
     <updated>2022-02-22T08:57:08.249Z</updated>
     
