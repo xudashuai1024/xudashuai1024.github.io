@@ -4,12 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java修行之路_算法, HTML,JavaScript,JQuery,Java,linux等">
-    <meta name="description" content="算法_二叉树二叉树关于二叉树遍历，添加，删除情况套路通用处理
-二叉树算法的设计的总路线：明确一个节点要做的事情，然后剩下的事抛给框架
-
-void traverse(TreeNode root) {
-    // root 需要做什么？在这做">
+    <meta name="keywords" content="Java修行之路-MySQL框架探索, HTML,JavaScript,JQuery,Java,linux等">
+    <meta name="description" content="MySQL框架探索IMySQL驱动MySQL驱动就是在底层跟数据库建立网络连接
+数据库连接池为避免多个线程反复循环创建连接，销毁连接的情况，会使用数据库连接池，来维护多个数据库连接，不销这些数据库连接，而是放回数据库连接池中，等待其他继续使">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +18,7 @@ void traverse(TreeNode root) {
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java修行之路_算法 | 徐哈哈</title>
+    <title>Java修行之路-MySQL框架探索 | 徐哈哈</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -256,12 +253,12 @@ void traverse(TreeNode root) {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java修行之路_算法</h1>
+                    <h1 class="description center-align post-title">Java修行之路-MySQL框架探索</h1>
                 </div>
             </div>
         </div>
@@ -377,8 +374,8 @@ void traverse(TreeNode root) {
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                <span class="chip bg-color">算法</span>
+                            <a href="/tags/MySQL/">
+                                <span class="chip bg-color">MySQL</span>
                             </a>
                         
                     </div>
@@ -402,28 +399,28 @@ void traverse(TreeNode root) {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-24
+                    2022-03-04
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-24
+                    2022-03-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    708
+                    1.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    6 分
                 </div>
                 
 
@@ -441,154 +438,54 @@ void traverse(TreeNode root) {
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="算法-二叉树"><a href="#算法-二叉树" class="headerlink" title="算法_二叉树"></a>算法_二叉树</h1><h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2><h4 id="关于二叉树遍历，添加，删除情况套路通用处理"><a href="#关于二叉树遍历，添加，删除情况套路通用处理" class="headerlink" title="关于二叉树遍历，添加，删除情况套路通用处理"></a>关于二叉树遍历，添加，删除情况套路通用处理</h4><blockquote>
-<p>二叉树算法的设计的总路线：明确一个节点要做的事情，然后剩下的事抛给框架</p>
+                <h1 id="MySQL框架探索I"><a href="#MySQL框架探索I" class="headerlink" title="MySQL框架探索I"></a>MySQL框架探索I</h1><h4 id="MySQL驱动"><a href="#MySQL驱动" class="headerlink" title="MySQL驱动"></a>MySQL驱动</h4><p>MySQL驱动就是在底层跟数据库建立网络连接</p>
+<h4 id="数据库连接池"><a href="#数据库连接池" class="headerlink" title="数据库连接池"></a>数据库连接池</h4><p>为避免多个线程反复循环创建连接，销毁连接的情况，会使用<strong>数据库连接池</strong>，来维护多个数据库连接，不销这些数据库连接，而是放回数据库连接池中，等待其他继续使用</p>
+<h4 id="从数据库连接池中获取SQL后执行流程"><a href="#从数据库连接池中获取SQL后执行流程" class="headerlink" title="从数据库连接池中获取SQL后执行流程"></a>从数据库连接池中获取SQL后执行流程</h4><p>1.网络连接后必须让线程来处理（由线程去监听和读取请求）</p>
+<p>2.线程把SQL语句交给SQL接口执行</p>
+<p>3.SQL接口解析SQL后交给SQL解析器</p>
+<p>4.SQL解析器把解析好的SQL交给查询优化器（选择最优查询路线）</p>
+<p>5.交给存储引擎执行SQL语句</p>
+<p>6.存储引擎去内存或者磁盘获取数据</p>
+<h3 id="InnoDB架构设计，如何基于存储引擎完成一条更新SQL执行"><a href="#InnoDB架构设计，如何基于存储引擎完成一条更新SQL执行" class="headerlink" title="InnoDB架构设计，如何基于存储引擎完成一条更新SQL执行"></a>InnoDB架构设计，如何基于存储引擎完成一条更新SQL执行</h3><h4 id="InnoDB重要内存结构：缓冲池"><a href="#InnoDB重要内存结构：缓冲池" class="headerlink" title="InnoDB重要内存结构：缓冲池"></a>InnoDB重要内存结构：缓冲池</h4><p>引擎在执行更新语句的时候，会先看一下缓冲池，如果没有，那么会直接从磁盘里加载到缓冲池里来，并对这行记录加独占锁</p>
+<h4 id="undo日志：更新的数据进行回滚"><a href="#undo日志：更新的数据进行回滚" class="headerlink" title="undo日志：更新的数据进行回滚"></a>undo日志：更新的数据进行回滚</h4><p>存储引擎考虑数据回滚需要，会把更新前的值写入undo日志文件中</p>
+<h4 id="更新buffer-pool中的缓存数据"><a href="#更新buffer-pool中的缓存数据" class="headerlink" title="更新buffer pool中的缓存数据"></a>更新buffer pool中的缓存数据</h4><p>开始更新操作的时候，先是更新缓冲池中的记录，此时这个数据就是<strong>脏数据</strong></p>
+<h4 id="Redo-Log-Buffer：万一系统宕机，如何避免数据丢失？"><a href="#Redo-Log-Buffer：万一系统宕机，如何避免数据丢失？" class="headerlink" title="Redo Log Buffer：万一系统宕机，如何避免数据丢失？"></a>Redo Log Buffer：万一系统宕机，如何避免数据丢失？</h4><p>为避免执行写操作时候宕机，就必须把对内存所做的修改写入到一个Redo Log Buffer里，也是一个内存里的一个缓冲区，用来存放redo日志</p>
+<blockquote>
+<p>就算此时写操作没提交事务宕机了，也没关系，丢失的也只是缓冲数据，磁盘数据还是原来的样子，后续可以执行补救方案</p>
 </blockquote>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">traverse</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// root 需要做什么？在这做。</span>
-    <span class="token comment">// 其他的不用 root 操心，抛给框架</span>
-    <span class="token function">traverse</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">traverse</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="热身：1-如何把二叉树所有的节点中的值加一？"><a href="#热身：1-如何把二叉树所有的节点中的值加一？" class="headerlink" title="热身：1. 如何把二叉树所有的节点中的值加一？"></a><strong>热身：1. 如何把二叉树所有的节点中的值加一？</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">plusOne</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
-    root<span class="token punctuation">.</span>val <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-
-    <span class="token function">plusOne</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">plusOne</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="2-如何判断两棵二叉树是否完全相同？"><a href="#2-如何判断两棵二叉树是否完全相同？" class="headerlink" title="2. 如何判断两棵二叉树是否完全相同？"></a><strong>2. 如何判断两棵二叉树是否完全相同？</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">boolean</span> <span class="token function">isSameTree</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root1<span class="token punctuation">,</span> <span class="token class-name">TreeNode</span> root2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// 都为空的话，显然相同</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>root1 <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> root2 <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token comment">// 一个为空，一个非空，显然不同</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>root1 <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> root2 <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token comment">// 两个都非空，但 val 不一样也不行</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>root1<span class="token punctuation">.</span>val <span class="token operator">!=</span> root2<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-
-    <span class="token comment">// root1 和 root2 该比的都比完了</span>
-    <span class="token keyword">return</span> <span class="token function">isSameTree</span><span class="token punctuation">(</span>root1<span class="token punctuation">.</span>left<span class="token punctuation">,</span> root2<span class="token punctuation">.</span>left<span class="token punctuation">)</span>
-        <span class="token operator">&amp;&amp;</span> <span class="token function">isSameTree</span><span class="token punctuation">(</span>root1<span class="token punctuation">.</span>right<span class="token punctuation">,</span> root2<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="判断-BST-的合法性"><a href="#判断-BST-的合法性" class="headerlink" title="判断 BST 的合法性"></a><strong>判断 BST 的合法性</strong></h4><blockquote>
-<p>二叉搜索树（Binary Search Tree，简称 BST）是一种很常用的的二叉树。它的定义是：一个二叉树中，任意节点的值要大于等于左子树所有节点的值，且要小于等于右边子树的所有节点的值。这种情况，我们可以使用辅助函数，增加函数参数列表，在参数中携带额外信息</p>
+<h4 id="提交事务的时候将redo日志写入磁盘"><a href="#提交事务的时候将redo日志写入磁盘" class="headerlink" title="提交事务的时候将redo日志写入磁盘"></a>提交事务的时候将redo日志写入磁盘</h4><p>当提交一个事务，会根据一定的策略把redo日志从redo log buffer里刷入磁盘文件里</p>
+<p>策略是通过InnoDB_flush_log_at_trx_commit来配置</p>
+<p>参数值为0时，不会把redo log buffer里的数据刷入磁盘文件，异常情况会丢失内存的全部数据</p>
+<p>参数值为1时，提交事务时，必须把redo log从内存刷入到磁盘文件里，只要事务提交成功，那么redo log就必然在磁盘里</p>
+<p>参数值为2时，提交事务，把redo日志写入磁盘文件对应的os cache缓存里，而不是直接进入磁盘文件，出现异常情况也会丢失os cache数据，让你感觉事务已经提交了，但是并没有</p>
+<h4 id="MySQL-binlog到底是什么"><a href="#MySQL-binlog到底是什么" class="headerlink" title="MySQL binlog到底是什么"></a>MySQL binlog到底是什么</h4><p><strong>bin log</strong>叫做归档日志，不是InnoDB存储引擎特有的日志，是MySQL server自己的日志</p>
+<p>在提交事务的时候，会把redo log日志写入磁盘文件中，还会把这些操作更新到对应的binlog日志文件中</p>
+<h4 id="binlog日志的刷盘策略分析"><a href="#binlog日志的刷盘策略分析" class="headerlink" title="binlog日志的刷盘策略分析"></a>binlog日志的刷盘策略分析</h4><p>对于binlog也有不同刷盘策略，通过一个sync_binlog参数控制binlog刷盘策略</p>
+<p>参数值为0时，binlo写入磁盘时，不是直接进入磁盘文件，而是进入os cache内存缓存</p>
+<p>参数值为1时，会强制在提交事务的时候，把binlog直接写入到磁盘文件里</p>
+<h4 id="基于binlog和redo-log完成事务的提交"><a href="#基于binlog和redo-log完成事务的提交" class="headerlink" title="基于binlog和redo log完成事务的提交"></a>基于binlog和redo log完成事务的提交</h4><p>把binlog写入磁盘文件之后，接着完成最终的事务提交，把本次更新对应的binlog文件和这次更新的binlog日志在文件里的位置，都写入到redo log日志文件里，同时在redo log日志文件里写入一个commit标记</p>
+<blockquote>
+<p>commit标记的意义：用来保持redo log日志与binlog日志一致的</p>
 </blockquote>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">boolean</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">boolean</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">,</span> <span class="token class-name">TreeNode</span> min<span class="token punctuation">,</span> <span class="token class-name">TreeNode</span> max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>min <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> root<span class="token punctuation">.</span>val <span class="token operator">&lt;=</span> min<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>max <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> root<span class="token punctuation">.</span>val <span class="token operator">&gt;=</span> max<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span> min<span class="token punctuation">,</span> root<span class="token punctuation">)</span> 
-        <span class="token operator">&amp;&amp;</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">,</span> root<span class="token punctuation">,</span> max<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="在-BST-中查找一个数是否存在"><a href="#在-BST-中查找一个数是否存在" class="headerlink" title="在 BST 中查找一个数是否存在"></a><strong>在 BST 中查找一个数是否存在</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token function">isInBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> target<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">==</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>leftNode<span class="token punctuation">,</span>target<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>rightNode<span class="token punctuation">,</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="使用二分查找法"><a href="#使用二分查找法" class="headerlink" title="使用二分查找法"></a>使用二分查找法</h5><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token function">isInBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> target<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">==</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&lt;</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span> 
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&gt;</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span> 
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="以上算法中可抽象出方法架子（针对遍历的架子）"><a href="#以上算法中可抽象出方法架子（针对遍历的架子）" class="headerlink" title="以上算法中可抽象出方法架子（针对遍历的架子）"></a><strong>以上算法中可抽象出方法架子（针对遍历的架子）</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">BST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> value<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">==</span> value<span class="token punctuation">)</span> <span class="token comment">//找到目标，进行操作</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>val <span class="token operator">&lt;</span> value<span class="token punctuation">)</span>  <span class="token function">BST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>val <span class="token operator">&gt;</span> value<span class="token punctuation">)</span>  <span class="token function">BST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="在-BST-中插入一个数"><a href="#在-BST-中插入一个数" class="headerlink" title="在 BST 中插入一个数"></a><strong>在 BST 中插入一个数</strong></h4><blockquote>
-<p>对数据结构的操作无非遍历 + 访问，遍历就是“找”，访问就是“改”。具体到这个问题，插入一个数，就是先找到插入位置，然后进行插入操作。涉及“改”，函数就要返回 TreeNode 类型，并且对递归调用的返回值进行接收</p>
-</blockquote>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">TreeNode</span> <span class="token function">insertValue</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> val<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">TreeNode</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&lt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token function">insertValue</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&gt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token function">insertValue</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> node<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="在-BST-中删除一个数"><a href="#在-BST-中删除一个数" class="headerlink" title="在 BST 中删除一个数"></a><strong>在 BST 中删除一个数</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">TreeNode</span> <span class="token function">deleteNode</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> val<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> val<span class="token punctuation">)</span> <span class="token comment">//进行删除</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&lt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token function">deleteNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&gt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token function">deleteNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> node<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h4 id="如何配置Buffer-Pool的大小"><a href="#如何配置Buffer-Pool的大小" class="headerlink" title="如何配置Buffer Pool的大小"></a>如何配置Buffer Pool的大小</h4><p>默认是128M,如果是16核32G的机器，可以分配个2G</p>
+<p>设置Innodb_buffer_pool_size = 2147483648就可以</p>
+<h4 id="磁盘上的数据页和Buffer-Pool中的缓存页如何对应上的"><a href="#磁盘上的数据页和Buffer-Pool中的缓存页如何对应上的" class="headerlink" title="磁盘上的数据页和Buffer Pool中的缓存页如何对应上的"></a>磁盘上的数据页和Buffer Pool中的缓存页如何对应上的</h4><p>实际上磁盘中存放的数据页大小是16kb，而buffer pool与数据页是对应的，也是16kb</p>
+<h4 id="缓存页对应存放的信息"><a href="#缓存页对应存放的信息" class="headerlink" title="缓存页对应存放的信息"></a>缓存页对应存放的信息</h4><p>把数据页加载到buffer pool里去，会存放对应的数据页所属的表空间，数据页的编号，还有buffer pool的地址</p>
+<h4 id="如何知道哪些缓存页是空闲的"><a href="#如何知道哪些缓存页是空闲的" class="headerlink" title="如何知道哪些缓存页是空闲的"></a>如何知道哪些缓存页是空闲的</h4><p>数据库会为Buffer pool设计一个<strong>free链表</strong>（双向链表），在free链表里，每个节点就是一个空闲的缓存页描述数据块的地址，也就是，只要一个缓存页是空闲的，那么他的描述数据块就会被放入到free链表中</p>
+<h4 id="如何知道哪些缓存页是脏页"><a href="#如何知道哪些缓存页是脏页" class="headerlink" title="如何知道哪些缓存页是脏页"></a>如何知道哪些缓存页是脏页</h4><p>最终内存更新的脏页数据是要被刷新回磁盘文件的，所以数据库这里会引入一个跟free链表类型的<strong>flush链表</strong>。</p>
+<p>flush链表本质也是通过缓存页的描述数据块中的两个指针，让修改过的缓存页的描述数据块，组成一个双向链表</p>
+<h4 id="对于缓存页要是满了，该如何淘汰更新缓存页"><a href="#对于缓存页要是满了，该如何淘汰更新缓存页" class="headerlink" title="对于缓存页要是满了，该如何淘汰更新缓存页"></a>对于缓存页要是满了，该如何淘汰更新缓存页</h4><p>就通过缓存页的缓存命中率来判断，缓存命中率低的就刷新到磁盘文件中，那如何判断哪些缓存页经常被访问，或者很少被访问呢，数据库又引入了一个<strong>LRU链表</strong>，对于经常使用到的缓存页会被放入到链表头部</p>
+<h4 id="MySQL的预读机制会给LRU带来隐患"><a href="#MySQL的预读机制会给LRU带来隐患" class="headerlink" title="MySQL的预读机制会给LRU带来隐患"></a>MySQL的预读机制会给LRU带来隐患</h4><p>通过预读机制，会将一些数据直接被放入到LRU链表头部，导致一些热点访问数据被挤到尾部</p>
+<p>那么什么情况下会触发MySQL预读机制呢？</p>
+<p>1.参数配置InnoDB_read_ahead_threahold，默认是OFF关闭状态的，默认值为56，意思是如果顺序访问一个区里的多少个数据页，访问的数据页数量超过了参数值，会触发预读机制</p>
+<p>2.如果buffer pool里缓存一个区里的13个连续的数据页，而且这些数据页都是比较频繁被访问的，此时会直接触发预读机制，把这个区里的其他数据页都加载到缓存里。</p>
+<p>另外一种可能会导致频繁被访问的缓存页被淘汰的场景，就是<strong>全表扫描</strong></p>
+<p>一下会将表里查出所有的数据页都从磁盘加载到buffer pool里，然后装入各个缓存页里</p>
+<h4 id="基于冷热分离的思想设计LRU链表"><a href="#基于冷热分离的思想设计LRU链表" class="headerlink" title="基于冷热分离的思想设计LRU链表"></a>基于冷热分离的思想设计LRU链表</h4><p>真正LRU链表的设计的是基于冷热分离思想做的，把LRU拆分成两个部分，热数据和冷数据，占比是由<strong>参数InnoDB_old_blocks_pc</strong>t控制，默认是37，就是冷数据占比37%</p>
+<h3 id="MySQL事务隔离级别"><a href="#MySQL事务隔离级别" class="headerlink" title="MySQL事务隔离级别"></a>MySQL事务隔离级别</h3><p>1.read uncommitted（读未提交）</p>
+<p>2.read committed（读已提交）</p>
+<p>3.repeatable read（可重复读）</p>
+<p>4.serializable（串行化）</p>
 
                 
             </div>
@@ -615,7 +512,7 @@ void traverse(TreeNode root) {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xudashuai1024.github.io/2022/02/24/java-xiu-xing-zhi-lu-suan-fa/">https://xudashuai1024.github.io/2022/02/24/java-xiu-xing-zhi-lu-suan-fa/</a>
+                    <a href="https://xudashuai1024.github.io/2022/03/04/java-xiu-xing-zhi-lu-mysql-kuang-jia-tan-suo-i/">https://xudashuai1024.github.io/2022/03/04/java-xiu-xing-zhi-lu-mysql-kuang-jia-tan-suo-i/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -653,8 +550,8 @@ void traverse(TreeNode root) {
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                    <span class="chip bg-color">算法</span>
+                                <a href="/tags/MySQL/">
+                                    <span class="chip bg-color">MySQL</span>
                                 </a>
                             
                         </div>
@@ -825,7 +722,7 @@ void traverse(TreeNode root) {
         repo: 'xudashuai1024.github.io',
         owner: 'xudashuai1024',
         admin: ["xudashuai1024"],
-        id: '2022-02-24T11-13-47',
+        id: '2022-03-04T11-29-44',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -859,13 +756,13 @@ void traverse(TreeNode root) {
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/02/25/java-xiu-xing-zhi-lu-redis-gao-ke-yong-te-xing/">
+                <a href="/2022/03/04/java-xiu-xing-zhi-lu-mq-kuang-jia-tan-suo-i/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Java修行之路_Redis高可用性">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Java修行之路-MQ框架探索I">
                         
-                        <span class="card-title">Java修行之路_Redis高可用性</span>
+                        <span class="card-title">Java修行之路-MQ框架探索I</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -876,8 +773,57 @@ void traverse(TreeNode root) {
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-25
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-04
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/MQ/">
+                        <span class="chip bg-color">MQ</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/02/25/java-xiu-xing-zhi-lu-redis-huan-cun-yi-chang-chu-li/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Java修行之路-Redis缓存异常处理">
+                        
+                        <span class="card-title">Java修行之路-Redis缓存异常处理</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -895,55 +841,6 @@ void traverse(TreeNode root) {
                     
                     <a href="/tags/Redis/">
                         <span class="chip bg-color">Redis</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/02/22/java-xiu-xing-zhi-lu-she-ji-mo-shi/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Java修行之路_设计模式">
-                        
-                        <span class="card-title">Java修行之路_设计模式</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-22
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                        <span class="chip bg-color">设计模式</span>
                     </a>
                     
                 </div>

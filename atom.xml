@@ -6,7 +6,7 @@
   <link href="https://xudashuai1024.github.io/atom.xml" rel="self"/>
   
   <link href="https://xudashuai1024.github.io/"/>
-  <updated>2022-02-25T09:54:04.181Z</updated>
+  <updated>2022-03-04T03:38:00.008Z</updated>
   <id>https://xudashuai1024.github.io/</id>
   
   <author>
@@ -15,6 +15,81 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java修行之路-Dubbo框架探索I</title>
+    <link href="https://xudashuai1024.github.io/2022/03/04/java-xiu-xing-zhi-lu-dubbo-kuang-jia-tan-suo-i/"/>
+    <id>https://xudashuai1024.github.io/2022/03/04/java-xiu-xing-zhi-lu-dubbo-kuang-jia-tan-suo-i/</id>
+    <published>2022-03-04T03:29:44.000Z</published>
+    <updated>2022-03-04T03:38:00.008Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Dubbo框架探索I&quot;&gt;&lt;a href=&quot;#Dubbo框架探索I&quot; class=&quot;headerlink&quot; title=&quot;Dubbo框架探索I&quot;&gt;&lt;/a&gt;Dubbo框架探索I&lt;/h1&gt;&lt;h4</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://xudashuai1024.github.io/categories/Java/"/>
+    
+    
+    <category term="Dubbo" scheme="https://xudashuai1024.github.io/tags/Dubbo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java修行之路-MQ框架探索I</title>
+    <link href="https://xudashuai1024.github.io/2022/03/04/java-xiu-xing-zhi-lu-mq-kuang-jia-tan-suo-i/"/>
+    <id>https://xudashuai1024.github.io/2022/03/04/java-xiu-xing-zhi-lu-mq-kuang-jia-tan-suo-i/</id>
+    <published>2022-03-04T03:29:44.000Z</published>
+    <updated>2022-03-04T03:47:29.705Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MQ消息中间件框架探索I&quot;&gt;&lt;a href=&quot;#MQ消息中间件框架探索I&quot; class=&quot;headerlink&quot; title=&quot;MQ消息中间件框架探索I&quot;&gt;&lt;/a&gt;MQ消息中间件框架探索I&lt;/h1&gt;&lt;h4 id=&quot;为什么用消息队列？&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://xudashuai1024.github.io/categories/Java/"/>
+    
+    
+    <category term="MQ" scheme="https://xudashuai1024.github.io/tags/MQ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java修行之路-MySQL框架探索</title>
+    <link href="https://xudashuai1024.github.io/2022/03/04/java-xiu-xing-zhi-lu-mysql-kuang-jia-tan-suo-i/"/>
+    <id>https://xudashuai1024.github.io/2022/03/04/java-xiu-xing-zhi-lu-mysql-kuang-jia-tan-suo-i/</id>
+    <published>2022-03-04T03:29:44.000Z</published>
+    <updated>2022-03-04T03:32:56.437Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;MySQL框架探索I&quot;&gt;&lt;a href=&quot;#MySQL框架探索I&quot; class=&quot;headerlink&quot; title=&quot;MySQL框架探索I&quot;&gt;&lt;/a&gt;MySQL框架探索I&lt;/h1&gt;&lt;h4 id=&quot;MySQL驱动&quot;&gt;&lt;a href=&quot;#MySQL驱动&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://xudashuai1024.github.io/categories/Java/"/>
+    
+    
+    <category term="MySQL" scheme="https://xudashuai1024.github.io/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>Java修行之路-Redis缓存异常处理</title>

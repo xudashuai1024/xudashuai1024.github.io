@@ -4,12 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java修行之路_算法, HTML,JavaScript,JQuery,Java,linux等">
-    <meta name="description" content="算法_二叉树二叉树关于二叉树遍历，添加，删除情况套路通用处理
-二叉树算法的设计的总路线：明确一个节点要做的事情，然后剩下的事抛给框架
-
-void traverse(TreeNode root) {
-    // root 需要做什么？在这做">
+    <meta name="keywords" content="Java修行之路-Dubbo框架探索I, HTML,JavaScript,JQuery,Java,linux等">
+    <meta name="description" content="Dubbo框架探索Idubbo的工作原理？dubbo的注册中心挂了是否能继续通信？一次rpc调用的流程？工作原理：
+第一层：service层，接口层，给服务提供者和消费者来实现的（provider和consumer）
+第二层：config层">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +19,7 @@ void traverse(TreeNode root) {
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java修行之路_算法 | 徐哈哈</title>
+    <title>Java修行之路-Dubbo框架探索I | 徐哈哈</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -256,12 +254,12 @@ void traverse(TreeNode root) {
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java修行之路_算法</h1>
+                    <h1 class="description center-align post-title">Java修行之路-Dubbo框架探索I</h1>
                 </div>
             </div>
         </div>
@@ -377,8 +375,8 @@ void traverse(TreeNode root) {
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                <span class="chip bg-color">算法</span>
+                            <a href="/tags/Dubbo/">
+                                <span class="chip bg-color">Dubbo</span>
                             </a>
                         
                     </div>
@@ -402,28 +400,28 @@ void traverse(TreeNode root) {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-02-24
+                    2022-03-04
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-02-24
+                    2022-03-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    708
+                    2.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    9 分
                 </div>
                 
 
@@ -441,154 +439,97 @@ void traverse(TreeNode root) {
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="算法-二叉树"><a href="#算法-二叉树" class="headerlink" title="算法_二叉树"></a>算法_二叉树</h1><h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2><h4 id="关于二叉树遍历，添加，删除情况套路通用处理"><a href="#关于二叉树遍历，添加，删除情况套路通用处理" class="headerlink" title="关于二叉树遍历，添加，删除情况套路通用处理"></a>关于二叉树遍历，添加，删除情况套路通用处理</h4><blockquote>
-<p>二叉树算法的设计的总路线：明确一个节点要做的事情，然后剩下的事抛给框架</p>
-</blockquote>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">traverse</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// root 需要做什么？在这做。</span>
-    <span class="token comment">// 其他的不用 root 操心，抛给框架</span>
-    <span class="token function">traverse</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">traverse</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="热身：1-如何把二叉树所有的节点中的值加一？"><a href="#热身：1-如何把二叉树所有的节点中的值加一？" class="headerlink" title="热身：1. 如何把二叉树所有的节点中的值加一？"></a><strong>热身：1. 如何把二叉树所有的节点中的值加一？</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">plusOne</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
-    root<span class="token punctuation">.</span>val <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-
-    <span class="token function">plusOne</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">plusOne</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="2-如何判断两棵二叉树是否完全相同？"><a href="#2-如何判断两棵二叉树是否完全相同？" class="headerlink" title="2. 如何判断两棵二叉树是否完全相同？"></a><strong>2. 如何判断两棵二叉树是否完全相同？</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">boolean</span> <span class="token function">isSameTree</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root1<span class="token punctuation">,</span> <span class="token class-name">TreeNode</span> root2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// 都为空的话，显然相同</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>root1 <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> root2 <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token comment">// 一个为空，一个非空，显然不同</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>root1 <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">||</span> root2 <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token comment">// 两个都非空，但 val 不一样也不行</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>root1<span class="token punctuation">.</span>val <span class="token operator">!=</span> root2<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-
-    <span class="token comment">// root1 和 root2 该比的都比完了</span>
-    <span class="token keyword">return</span> <span class="token function">isSameTree</span><span class="token punctuation">(</span>root1<span class="token punctuation">.</span>left<span class="token punctuation">,</span> root2<span class="token punctuation">.</span>left<span class="token punctuation">)</span>
-        <span class="token operator">&amp;&amp;</span> <span class="token function">isSameTree</span><span class="token punctuation">(</span>root1<span class="token punctuation">.</span>right<span class="token punctuation">,</span> root2<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="判断-BST-的合法性"><a href="#判断-BST-的合法性" class="headerlink" title="判断 BST 的合法性"></a><strong>判断 BST 的合法性</strong></h4><blockquote>
-<p>二叉搜索树（Binary Search Tree，简称 BST）是一种很常用的的二叉树。它的定义是：一个二叉树中，任意节点的值要大于等于左子树所有节点的值，且要小于等于右边子树的所有节点的值。这种情况，我们可以使用辅助函数，增加函数参数列表，在参数中携带额外信息</p>
-</blockquote>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">boolean</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">boolean</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">,</span> <span class="token class-name">TreeNode</span> min<span class="token punctuation">,</span> <span class="token class-name">TreeNode</span> max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>min <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> root<span class="token punctuation">.</span>val <span class="token operator">&lt;=</span> min<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>max <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> root<span class="token punctuation">.</span>val <span class="token operator">&gt;=</span> max<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span> min<span class="token punctuation">,</span> root<span class="token punctuation">)</span> 
-        <span class="token operator">&amp;&amp;</span> <span class="token function">isValidBST</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">,</span> root<span class="token punctuation">,</span> max<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="在-BST-中查找一个数是否存在"><a href="#在-BST-中查找一个数是否存在" class="headerlink" title="在 BST 中查找一个数是否存在"></a><strong>在 BST 中查找一个数是否存在</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token function">isInBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> target<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">==</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>leftNode<span class="token punctuation">,</span>target<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>rightNode<span class="token punctuation">,</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h5 id="使用二分查找法"><a href="#使用二分查找法" class="headerlink" title="使用二分查找法"></a>使用二分查找法</h5><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token function">isInBST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> target<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">==</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&lt;</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span> 
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&gt;</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">isInBST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span> 
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="以上算法中可抽象出方法架子（针对遍历的架子）"><a href="#以上算法中可抽象出方法架子（针对遍历的架子）" class="headerlink" title="以上算法中可抽象出方法架子（针对遍历的架子）"></a><strong>以上算法中可抽象出方法架子（针对遍历的架子）</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">BST</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> value<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">==</span> value<span class="token punctuation">)</span> <span class="token comment">//找到目标，进行操作</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>val <span class="token operator">&lt;</span> value<span class="token punctuation">)</span>  <span class="token function">BST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>val <span class="token operator">&gt;</span> value<span class="token punctuation">)</span>  <span class="token function">BST</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="在-BST-中插入一个数"><a href="#在-BST-中插入一个数" class="headerlink" title="在 BST 中插入一个数"></a><strong>在 BST 中插入一个数</strong></h4><blockquote>
-<p>对数据结构的操作无非遍历 + 访问，遍历就是“找”，访问就是“改”。具体到这个问题，插入一个数，就是先找到插入位置，然后进行插入操作。涉及“改”，函数就要返回 TreeNode 类型，并且对递归调用的返回值进行接收</p>
-</blockquote>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">TreeNode</span> <span class="token function">insertValue</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> val<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">TreeNode</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&lt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token function">insertValue</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&gt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token function">insertValue</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> node<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="在-BST-中删除一个数"><a href="#在-BST-中删除一个数" class="headerlink" title="在 BST 中删除一个数"></a><strong>在 BST 中删除一个数</strong></h4><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">TreeNode</span> <span class="token function">deleteNode</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> val<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node <span class="token operator">==</span> val<span class="token punctuation">)</span> <span class="token comment">//进行删除</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&lt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token function">deleteNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>value <span class="token operator">&gt;</span> val<span class="token punctuation">)</span> node<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token function">deleteNode</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">,</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> node<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <h1 id="Dubbo框架探索I"><a href="#Dubbo框架探索I" class="headerlink" title="Dubbo框架探索I"></a>Dubbo框架探索I</h1><h4 id="dubbo的工作原理？dubbo的注册中心挂了是否能继续通信？一次rpc调用的流程？"><a href="#dubbo的工作原理？dubbo的注册中心挂了是否能继续通信？一次rpc调用的流程？" class="headerlink" title="dubbo的工作原理？dubbo的注册中心挂了是否能继续通信？一次rpc调用的流程？"></a>dubbo的工作原理？dubbo的注册中心挂了是否能继续通信？一次rpc调用的流程？</h4><p>工作原理：</p>
+<p>第一层：service层，接口层，给服务提供者和消费者来实现的（provider和consumer）</p>
+<p>第二层：config层，配置层，主要是对dubbo进行各种配置的（提供配置文件进行参数配置）</p>
+<p>第三层：proxy层，服务代理层，透明生成客户端的stub和服务单的skeleton（无论是consumer，还是provider，dubbo都会给你生成代理，代理之间进行网络通信）</p>
+<p>第四层：registry层，服务注册层，负责服务的注册与发现（provider注册自己作为一个服务，consumer就可以找注册中心去寻找自己要调用的服务）</p>
+<p>第五层：cluster层，集群层，封装多个服务提供者的路由以及负载均衡，将多个实例组合成一个服务（provider可以部署在多台机器上的，多个provider就组成了一个集群）</p>
+<p>第六层：monitor层，监控层，对rpc接口的调用次数和调用时间进行监控（consumer调用provider，调用了多少次啊，统计信息监控）</p>
+<p>第七层：protocol层，远程调用层，封装rpc调用（负责具体的provider和consumer之间调用接口的时候的网络通信）</p>
+<p>第八层：exchange层，信息交换层，封装请求响应模式，同步转异步</p>
+<p>第九层：transport层，网络传输层，抽象mina和netty为统一接口</p>
+<p>第十层：serialize层，数据序列化层</p>
+<p>工作流程：</p>
+<p>第一步：provider向注册中心去注册</p>
+<p>第二步：consumer从注册中心订阅服务，注册中心会通知consumer注册好服务</p>
+<p>第三步：consumer会通过代理走负载均衡策略调用provider的代理，然后调用provider实例服务</p>
+<p>第四步：consumer和provider都异步通知监控中心</p>
+<p><strong>dubbo的注册中心挂了还可以继续通信</strong>：因为开始初始化的时候，消费者会将提供者的地址信息拉取到本地缓存，所以注册中心挂了还是可以继续通信</p>
+<h4 id="dubbo都支持哪些通信协议？都支持哪些序列化协议"><a href="#dubbo都支持哪些通信协议？都支持哪些序列化协议" class="headerlink" title="dubbo都支持哪些通信协议？都支持哪些序列化协议"></a>dubbo都支持哪些通信协议？都支持哪些序列化协议</h4><p><strong>1.dubbo协议：</strong></p>
+<p>默认走的是dubbo协议的，单一长连接，NIO异步通信，基于hessian作为序列化协议</p>
+<p>适用场景就是传输数据量很小（每次请求在100Kb以内），但是并发量很高</p>
+<p>为支持高并发场景，一般是服务提供者就几台机器，但是服务消费者有上百台，可能每天调用量达到上亿次！此时用长连接是最合适的，就是跟每个服务消费者维持一个长连接就可以，可能总共就100个连接。然后后面直接基于长连接NIO异步通信，可以支撑高并发请求。</p>
+<p>否则如果上亿次请求每次都是短连接的话，服务提供者会扛不住的</p>
+<p>因为走的是单一长链接，所以传输数据量太大的话，会导致并发能降低，所以建议是传输数据量很小，支撑高并发访问。</p>
+<p><strong>2.rmi协议：</strong></p>
+<p>走java二进制序列化，多个短连接，适合消费者和提供者数量差不多，适用于文件传输，一般比较少用</p>
+<p><strong>3.hessian协议：</strong></p>
+<p>走hessian序列化协议，多个短连接，适用于提供者数量比消费者数量还多，适用于文件的传输，一般少用</p>
+<p><strong>4.http协议：</strong></p>
+<p>走json序列化</p>
+<p><strong>5.webservice</strong></p>
+<p>走SOAP文本序列化</p>
+<p><strong>dubbo支持的序列化协议</strong></p>
+<p>dubbo实际基于不同的通信协议，支持hessian、java二进制序列化、json、SOAP文件序列化多种序列化协议。但是hessian是默认的序列化协议</p>
+<h4 id="dubbo有哪些负载均衡策略和集群容错策略？-动态代理策略呢？"><a href="#dubbo有哪些负载均衡策略和集群容错策略？-动态代理策略呢？" class="headerlink" title="dubbo有哪些负载均衡策略和集群容错策略？ 动态代理策略呢？"></a>dubbo有哪些负载均衡策略和集群容错策略？ 动态代理策略呢？</h4><p>1.负载均衡策略</p>
+<p>第一种：random loadbalance </p>
+<p>默认情况下，dubbo是random load balance随机调用实现负载均衡，可以对provider不同实例设置不同的权重，会按照权重来负载均衡，权重越大分配流量越高，一般就用这个默认的就可以</p>
+<p>第二种：roundrobin loadbalance</p>
+<p>roundrobin loadbalance，这个默认就是均匀地将流量打到各个服务器上，如果各个机器的性能不一样，容易导致性能差的机器负载过高，所以此时需要调整权重，让性能差的机器承载权重小一些，流量少一些</p>
+<p>第三种：leastactive loadbalance</p>
+<p>就是自动感知一下，如果某个机器性能越差，那么接收的请求越少，越不活跃，此时会给不活跃的性能差的机器更少的请求</p>
+<p>第四种：consistanthash loadbalance</p>
+<p>一致性hash算法，相同参数的请求一定分发到一个provider上去，provider挂掉的时候，会基于虚拟节点均匀分配剩余的流量，抖动不会太大。如果需要的不是随机负载均衡，是要一类请求都到一个节点，那就走这个一致性hash策略</p>
+<p>2.dubbo集群容错策略</p>
+<p>第一种：failover cluster模式</p>
+<p>失败自动切换，自动重试其他机器，默认就是这个，常见于读操作</p>
+<p>第二种：failfast cluster模式</p>
+<p>一次调用失败就立即失败，常见于写操作</p>
+<p>第三种：failsafe cluster模式</p>
+<p>出现异常时忽略掉，常用于不重要的接口调用，比如记录日志</p>
+<p>第四种：failback cluster模式</p>
+<p>失败了后台自动记录请求，然后定时重发，比较适合于写消息队列</p>
+<p>第五种：forKing cluster模式</p>
+<p>并行调用多个provider，只要一个成功就立即返回</p>
+<p>第六种：broadcacst cluster</p>
+<p>逐个调用所有的provider</p>
+<p>3.dubbo动态代理策略</p>
+<p>默认使用javassist动态字节码生成，创建代理类</p>
+<p>但是可以通过spi扩展机制配置自己的动态代理策略</p>
+<h4 id="dubbo的SPI思想是什么？"><a href="#dubbo的SPI思想是什么？" class="headerlink" title="dubbo的SPI思想是什么？"></a>dubbo的SPI思想是什么？</h4><p>spi简单来说 Service provider interface</p>
+<p>dubbo也是用了spi思想，不过没有用jdk的spi机制，是自己实现的一套spi机制</p>
+<p>Protocol protocol = ExtensionLoader.getExtensionLoader（Protocol.class）.getAdaptiveExtension();</p>
+<p>Protocol接口，dubbo要判断一下，在系统运行的时候，应该选用这个Protocol接口的哪个实现类来实例化对象来使用呢？</p>
+<p>他会去找一个你配置的Protocol，他就会将你配置的Protocol实现类，加载到JVM中来，然后实例化对象，就用你的那个Protocol实现类就可以了</p>
+<p>特性是：微内核，可插拔，大量的组件</p>
+<p>dubbo里面提供了很多扩展点，如果需要扩展，可以自己写个jar，让consumer或者provider工程，依赖你写的jar，在jar包里指定目录下配置好接口名称对应的文件，里面通过key = 实现类（文件路径）</p>
+<p>然后对对应的组件，用类似<a href="dubbo:protocol">dubbo:protocol</a>用你的哪个key对应的实现类来实现某个接口，</p>
+<p>可以自己去扩展dubbo的各种功能，提供自己的实现</p>
+<h3 id="基于dubbo如何做服务治理，服务降级以及重试？"><a href="#基于dubbo如何做服务治理，服务降级以及重试？" class="headerlink" title="基于dubbo如何做服务治理，服务降级以及重试？"></a>基于dubbo如何做服务治理，服务降级以及重试？</h3><p>1.服务治理</p>
+<p>第一点：调用链路自动生成</p>
+<p>服务与服务之间的调用路线</p>
+<p>第二点：服务访问压力以及时长统计</p>
+<p>其他：服务分层（避免循环依赖），调用链路失败监控和报警，服务鉴权，每个服务的可用性的监控</p>
+<p>2.服务降级 </p>
+<p>现在就是基于mock，如果调用失败统一返回null</p>
+<p>但是可以将mock设置为true，然后在跟接口同一个路径下实现一个Mock类，命名规则是接口名称加Mock后缀，然后在Mock类里实现自己的降级逻辑</p>
+<p>3.失败重试和超时重试</p>
+<p>所谓失败重试，就是consumer调用provider要是失败了，比如有异常，此时应该重试的，或者调用超时了也可以重试</p>
+<h4 id="分布式服务接口的幂等性如何设计？"><a href="#分布式服务接口的幂等性如何设计？" class="headerlink" title="分布式服务接口的幂等性如何设计？"></a>分布式服务接口的幂等性如何设计？</h4><p>这个不是技术问题，这个没有通用的一个方法，是一个需要结合保证幂等性</p>
+<p>保证幂等性主要是三点：</p>
+<p>1.对于每个请求必须有一个唯一的标识，举例子：订单支付请求，肯定包含订单id，一个订单id最多支付一次</p>
+<p>2.每次处理完请求之后，必须有一个记录标识这个请求处理过了，比如常见的方案是在mysql中记录数据状态，比如支付之前记录一条该订单的支付流水，而且支付流水采用orderld作为唯一键，只有成功插入这个支付流水，才可以执行实际的支付扣款</p>
+<p>3.每次接收请求需要进行判断之前是否处理过的逻辑处理，比如说，如果有一个订单已经支付了，就已经有了一条支付流水，那么如果重复发送这个请求，则此时先插入支付流水，orderld已经存在了，唯一键约束生效，报错插入不进去的。就可以不再扣款</p>
+<h4 id="如何保证分布式系统的接口调用顺序性？"><a href="#如何保证分布式系统的接口调用顺序性？" class="headerlink" title="如何保证分布式系统的接口调用顺序性？"></a>如何保证分布式系统的接口调用顺序性？</h4><p>1.通过hash分发到不同服务器上不同的请求，然后将请求存入内存队列中，让线程从内存队列中获取有序请求，并进行数据库操作</p>
+<p>2.基于zookeeper做分布式锁，客户端请求，将请求放入mq中，然后通知服务器获取请求，然后通过zookeeper加锁判断请求顺序，再释放锁，让剩下请求进来执行操作</p>
+<h4 id="如何设计一个类似dubbo的rpc框架？"><a href="#如何设计一个类似dubbo的rpc框架？" class="headerlink" title="如何设计一个类似dubbo的rpc框架？"></a>如何设计一个类似dubbo的rpc框架？</h4><p>简单设计思路：</p>
+<p>1.服务需要注册中心，可以基于zookeeper做注册中心</p>
+<p>2.还需要做provider的一个动态代理层</p>
+<p>3.消费者通过代理层去注册中心获取信息的过程，而每个provider的服务可能在多台机器上</p>
+<p>4.然后发送到哪台服务器上，需要一个负载均衡算法进行分配</p>
+<p>5.找到服务器后，要考虑如何发送请求，可以使用netty，NIO方式；可以发送请求后，我们需要考虑发送什么样格式数据，可以使用hessian序列化协议</p>
+<p>6.请求过来，要监听某个网络端口，然后做一个动态代理调用你的本地服务</p>
 
                 
             </div>
@@ -615,7 +556,7 @@ void traverse(TreeNode root) {
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://xudashuai1024.github.io/2022/02/24/java-xiu-xing-zhi-lu-suan-fa/">https://xudashuai1024.github.io/2022/02/24/java-xiu-xing-zhi-lu-suan-fa/</a>
+                    <a href="https://xudashuai1024.github.io/2022/03/04/java-xiu-xing-zhi-lu-dubbo-kuang-jia-tan-suo-i/">https://xudashuai1024.github.io/2022/03/04/java-xiu-xing-zhi-lu-dubbo-kuang-jia-tan-suo-i/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -653,8 +594,8 @@ void traverse(TreeNode root) {
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%AE%97%E6%B3%95/">
-                                    <span class="chip bg-color">算法</span>
+                                <a href="/tags/Dubbo/">
+                                    <span class="chip bg-color">Dubbo</span>
                                 </a>
                             
                         </div>
@@ -825,7 +766,7 @@ void traverse(TreeNode root) {
         repo: 'xudashuai1024.github.io',
         owner: 'xudashuai1024',
         admin: ["xudashuai1024"],
-        id: '2022-02-24T11-13-47',
+        id: '2022-03-04T11-29-44',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -855,17 +796,18 @@ void traverse(TreeNode root) {
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/02/25/java-xiu-xing-zhi-lu-redis-gao-ke-yong-te-xing/">
+                <a href="/2022/03/04/java-xiu-xing-zhi-lu-dubbo-kuang-jia-tan-suo-i/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Java修行之路_Redis高可用性">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Java修行之路-Dubbo框架探索I">
                         
-                        <span class="card-title">Java修行之路_Redis高可用性</span>
+                        <span class="card-title">Java修行之路-Dubbo框架探索I</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -875,9 +817,9 @@ void traverse(TreeNode root) {
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -890,11 +832,12 @@ void traverse(TreeNode root) {
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Redis/">
-                        <span class="chip bg-color">Redis</span>
+                    <a href="/tags/Dubbo/">
+                        <span class="chip bg-color">Dubbo</span>
                     </a>
                     
                 </div>
@@ -908,13 +851,13 @@ void traverse(TreeNode root) {
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/02/22/java-xiu-xing-zhi-lu-she-ji-mo-shi/">
+                <a href="/2022/03/04/java-xiu-xing-zhi-lu-mq-kuang-jia-tan-suo-i/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Java修行之路_设计模式">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Java修行之路-MQ框架探索I">
                         
-                        <span class="card-title">Java修行之路_设计模式</span>
+                        <span class="card-title">Java修行之路-MQ框架探索I</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -925,7 +868,7 @@ void traverse(TreeNode root) {
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-04
                             </span>
                         <span class="publish-author">
                             
@@ -942,8 +885,8 @@ void traverse(TreeNode root) {
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                        <span class="chip bg-color">设计模式</span>
+                    <a href="/tags/MQ/">
+                        <span class="chip bg-color">MQ</span>
                     </a>
                     
                 </div>
